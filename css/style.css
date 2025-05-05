@@ -1,0 +1,566 @@
+/****************************************
+**          0. CSS RESET               **
+*****************************************/
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", "sans-serif";
+  /* border: 1px solid red; */
+}
+
+
+
+
+/****************************************
+**          1. ITENS GLOBAIS           **
+*****************************************/
+section {
+  padding: 10rem 5rem 20rem 5rem;
+}
+
+h2 {
+  font-size: clamp(1.7rem, 3.5vw, 3.5rem);
+}
+
+.texto-centralizado {
+  text-align: center;
+  color: #0f172b;
+}
+
+p.texto-centralizado {
+  margin-top: 1rem;
+  margin-bottom: 5rem;
+  font-size: clamp(1rem, 1.5vw, 1.5rem);
+}
+
+
+
+
+/****************************************
+**           2. CABEÇALHO              **
+*****************************************/
+header {
+  background-color: #1428bf;
+}
+
+/* Menu de navegação */
+.container-menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 1.5rem;
+  gap: 4rem;
+}
+
+/*  Menu de navegação - Logomarca */
+.logo img {
+  max-width: 6.5vw;
+  margin-left: 2rem;
+}
+
+/* Menu de navegação - Opções do menu */
+.main-nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 4rem;
+}
+
+.btn-menu {
+  background: none;
+  border: none;
+  font-size: 2rem;
+  color: #fff;
+  cursor: pointer;
+}
+
+.main-nav a:link, .main-nav a:visited {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 400;
+}
+
+.main-nav a:hover, .main-nav a:active {
+  font-weight: 700;
+}
+
+/* Menu de navegação - Redes sociais */
+.social {
+  margin-right: 1.5rem;
+}
+
+.social a {
+  margin-right: 0.5rem;
+}
+
+.social img {
+  max-width: 1vw;
+}
+
+/* Hero */
+.hero {
+  display: flex;
+  align-items: stretch;
+  padding: 5rem 5rem 0;
+}
+
+.texto-principal {
+  -webkit-flex: 3;
+  -ms-flex: 3;
+  flex: 3;
+  color: #ffffff;
+  text-align: center;
+  padding-top: 5rem;
+}
+
+.texto-principal h1 {
+  font-size: clamp(2rem, 5vw, 5rem);
+  line-height: 1.2;
+  font-weight: 700;
+}
+
+.texto-principal p {
+  margin-top: 1.5rem;
+  font-weight: 400;
+  font-size: clamp(1rem, 3vw, 1.8rem);
+}
+
+.imagem-principal {
+  -webkit-flex: 1.7;
+  -ms-flex: 1.7;
+  flex: 1.7;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.imagem-principal img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+
+
+
+/****************************************
+**         3. CURSOS ONLINE            **
+*****************************************/
+/* Estrutura externa do conteúdo */
+.container-cursos {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  padding: 0 5rem;
+  gap: 1rem;
+}
+
+/* Estrutura interna esquerda - THUMB (valores representam 30%) */
+.container-thumb-curso {
+  -webkit-flex: 1.41;
+  -ms-flex: 1.41;
+  flex: 1.41;
+}
+
+.container-cursos img {
+  max-width: 100%;
+  border-radius: 30px;
+  display: block;
+}
+
+/* Estrutura interna direita - TEXTO (valores representam 70%) */
+.container-conteudo-cursos {
+  -webkit-flex: 3.29;
+  -ms-flex: 3.29;
+  flex: 3.29;
+}
+
+/* Linha horizontal */
+.container-conteudo-cursos hr {
+  margin-top: 2.9rem;
+  border: none;
+  border-bottom: 1px solid #f9fafb;
+}
+
+/* Data do curso */
+.data-curso {
+  font-weight: 300;
+  color: #333333;
+}
+
+/* Tag com assunto do curso */
+.tag-curso {
+  margin-left: 0.15rem;
+  background-color: #f9fafb;
+  padding: 0.25rem 1rem;
+  border-radius: 30px;
+  color: #333333;
+}
+
+/* Textos da área de cursos */
+.container-conteudo-cursos {
+  color: #333333;
+}
+
+.container-conteudo-cursos h3 {
+  margin-top: 1rem;
+}
+
+/* Botão dos cursos */
+.botao-curso:link, .botao-curso:visited {
+  display: inline-block;
+  /* background-color: #1de979; */
+  background-color: #155dfc;
+  padding: 1rem 3rem;
+  margin-top: 1rem;
+  border-radius: 20px;
+  color: #ffffff;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.botao-curso:hover, .botao-curso:active {
+  /* background-color: #1bc768; */
+  background-color: #1148be;
+}
+
+
+
+
+/****************************************
+**            4. APOIADOR              **
+*****************************************/
+.apoiador {
+  background-color: #1428bf;
+  justify-items: right;
+  text-align: center;
+  background-image: url('../assets/background-apoiador-section.png');
+  background-repeat: no-repeat;
+  /* background-attachment: fixed; */
+  background-size: cover;
+  padding: 7rem 2rem;
+}
+
+.container-apoiador {
+  padding: 6rem 11rem;
+  background-image: url('../assets/background-apoiador-div.png');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+}
+
+.container-apoiador h2 {
+  font-size: clamp(1.5rem, 3.5vw, 3.5rem);
+}
+
+.container-apoiador p {
+  font-size: clamp(1rem, 1.5vw, 1.3rem);
+}
+
+.botao-main:link, .botao-main:visited {
+  display: inline-block;
+  /* background-color: #1de979; */
+  background-color: #155dfc;
+  padding: 1.6rem 6rem;
+  margin-top: 1rem;
+  border-radius: 50px;
+  color: #ffffff;
+  font-weight: 600;
+  text-decoration: none;
+  font-size: clamp(0.9rem, 1.2vw, 1.2rem);
+}
+
+.botao-main:hover, .botao-main:active {
+  /* background-color: #1bc768; */
+  background-color: #1148be;
+}
+
+
+
+
+/****************************************
+**             5. ALUNOS               **
+*****************************************/
+section.provas-sociais {
+  background: #f9fafb;
+}
+
+.linha-alunos {
+  column-count: 3;
+  column-gap: 2rem;
+}
+
+.coluna-alunos {
+  background: #ffffff;
+  display: inline-block;
+  width: 100%;
+  margin-bottom: 1.5rem;
+  padding: 2.5rem;
+  border-radius: 30px;
+  box-shadow: 5px 10px 8px 0px rgba(0, 0, 0, .05);
+  color: #0f172b;
+}
+
+.coluna-alunos hr {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  border: none;
+  border-top: 1px solid #f9fafb;
+}
+
+.aluno-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.aluno-footer img {
+  max-width: 12%;
+}
+
+
+
+
+/****************************************
+**            6. QUEM SOMOS            **
+*****************************************/
+.quem-somos {
+  display: flex;
+  column-gap: 3rem;
+}
+
+.quem-somos-texto {
+  -webkit-flex: 3;
+  -ms-flex: 3;
+  flex: 3;
+  font-size: clamp(0.9rem, 1.3vw, 1.3rem);
+}
+
+.quem-somos-img {
+  -webkit-flex: 1.5;
+  -ms-flex: 1.5;
+  flex: 1.5;
+}
+
+.quem-somos-img img {
+  max-width: 100%;
+}
+
+
+
+
+/****************************************
+**              7. RODAPÉ              **
+*****************************************/
+.footer-tech {
+  background-color: #fcfcfd;
+  display: flex;
+  flex-direction: row;
+  padding: 7rem 5rem;
+}
+
+.footer-column {
+  flex: 1;
+  text-align: center;
+}
+
+.footer-column ul {
+  list-style: none;
+}
+
+.footer-column img {
+  max-width: 25%;
+}
+
+.footer-column p {
+  color: #b3b3b3;
+}
+
+.footer-column a {
+  text-decoration: none;
+  color: #b3b3b3;
+}
+
+.footer-column ul {
+  margin-top: 1rem;
+}
+
+.footer-column li {
+  margin-bottom: 0.5rem;
+}
+
+.social-rodape img {
+  max-width: 1.5vw;
+  margin: 0.25rem;
+}
+
+.copy {
+  background-color: #1428bf;
+  color: #ffffff;
+  text-align: center;
+  padding: 3rem 0;
+}
+
+.copy a:link, .copy a:visited {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+
+
+
+/****************************************
+**          ?. MEDIA QUERIES           **
+*****************************************/
+@media screen and (max-width: 992px) {
+  /* Cabeçalho */
+  .container-menu {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .logo img {
+    max-width: 50%;
+    margin: 0;
+  }
+  .main-nav {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  .social {
+    padding-left: 1.5rem;
+  }
+  .social img {
+    max-width: 10%;
+  }
+  .hero {
+    flex-direction: column;
+    padding: 2rem 1.5rem 0;
+  }
+  .texto-principal {
+    text-align: center;
+  }
+  .imagem-principal {
+    margin-top: 2rem;
+    width: 100%;
+  }
+
+  /* Cursos Online */
+  section {
+    padding: 7rem 2rem;
+  }
+  .container-cursos {
+    flex-direction: column;
+    padding: 0;
+    text-align: center;
+  }
+  .container-thumb-curso {
+    -webkit-flex: 4.7;
+    -ms-flex: 4.7;
+    flex: 4.7;
+    align-items: center;
+  }
+  .container-thumb-curso img {
+    border-radius: 15px;
+    max-width: 100%;
+  }
+  .container-conteudo-cursos p {
+    font-size: 0.9rem;
+  }
+
+  /* Apoiador */
+  .apoiador {
+    display: flex;
+    align-items: stretch;
+    padding: 7rem 1rem;
+  }
+  .container-apoiador {
+    padding: 2rem;
+    background-image: none;
+    background-color: #ffffff;
+    border-radius: 15px;
+    outline: 1px solid #ffffff;
+    outline-offset: 0.4rem;
+  }
+  .botao-main:link, .botao-main:visited {
+    padding: 1rem 2rem;
+  }
+
+  /* Alunos */
+  .linha-alunos {
+    column-count: 1;
+  }
+  .coluna-alunos p {
+    font-size: 0.95rem;
+  }
+  .nome-aluno {
+    font-size: 0.9rem;
+  }
+
+  /* Quem somos */
+  .quem-somos {
+    flex-direction: column;
+    text-align: center;
+    row-gap: 3rem;
+  }
+
+  /* Rodapé */
+  .footer-tech {
+    flex-direction: column;
+    row-gap: 2rem;
+  }
+  .footer-column img {
+    max-width: 100%;
+    margin-bottom: 1rem;
+  }
+  .social-rodape {
+    display: flex;
+    flex-direction: row;
+    justify-items: center;
+    column-gap: 1rem;
+  }
+  .social-rodape img {
+    max-width: 50%;
+  }
+}
+
+@media screen and (min-width: 993px) and (max-width: 1366px) {
+  /* Cabeçalho */
+  .texto-principal h1 {
+    font-size: 3.48rem;
+  }
+  .texto-principal p {
+    font-size: 1.3rem;
+  }
+
+  /* Cursos Online */
+  section {
+    padding: 10rem 1rem 17rem;
+  }
+  .container-thumb-curso {
+    -webkit-flex: 1.7;
+    -ms-flex: 1.7;
+    flex: 1.7;
+  }
+  .container-conteudo-cursos {
+    -webkit-flex: 3;
+    -ms-flex: 3;
+    flex: 3;
+  }
+  .container-conteudo-cursos hr {
+    margin-top: 1.7rem;
+  }
+
+  /* Alunos */
+  .linha-alunos {
+    padding: 0 2rem 0;
+  }
+
+  /* Quem somos */
+  .quem-somos {
+    padding: 0 5rem;
+  }
+}
